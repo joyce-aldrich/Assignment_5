@@ -1,0 +1,50 @@
+---
+title: "Assignment_5"
+author: "Joyce Aldrich"
+date: "2022-10-15"
+output:
+  html_document: default
+---
+# Assignment
+# Pick three of your favorite books on one of your favorite subjects. At least one of the books should have more
+# than one author. For each book, include the title, authors, and two or three other attributes that you find
+# interesting.
+# Take the information that you’ve selected about these three books, and separately create three files which
+# store the book’s information in HTML (using an html table), XML, and JSON formats (e.g. “books.html”,
+# “books.xml”, and “books.json”). To help you better understand the different file structures, I’d prefer that you
+# create each of these files “by hand” unless you’re already very comfortable with the file formats.
+
+#install packages into R
+# XML / RJSON
+
+#1
+# HTML file 
+# Loading html file into R
+```{r}
+library(XML)
+books_html_table <- readHTMLTable("/Users/joycealdrich/Documents/SPS Data Science/Data 607/Assignment_5/Books.html", which = 1)
+head(books_html_table)
+```
+#2 
+#XML file
+#loadin XML file into R and turn into df
+
+```{r}
+library(XML)
+xml_parsed<-xmlParse(file = "/Users/joycealdrich/Documents/SPS Data Science/Data 607/Assignment_5/Books.xml")
+books_xml_table<-xmlToDataFrame(xml_parsed, stringsAsFactors = FALSE)                       
+head(books_xml_table)
+```
+#3
+#json
+#loading json file into R
+```{r}
+library(rjson)
+json_parsed <-fromJSON(file = "/Users/joycealdrich/Documents/SPS Data Science/Data 607/Assignment_5/Books.json")
+print(json_parsed)
+books_json_table<- as.data.frame(json_parsed)
+head(books_json_table)
+
+```
+
+
