@@ -1,0 +1,11 @@
+
+{
+    "Books": ["The Silent Patient","Where the Crawdads Sing","Mad Honey"],
+    "Author_1": ["Alex Michaelides","Delia Ownes","Delia Ownes"],
+    "Author_2": ["","","Jennifer Finney Boylan"],
+    "Publisher": ["Celadon Books","Penguin Publishing Group","Random House Publishing Group"],
+    "Pages": ["336","384","464"],
+    "ISBN": ["9781250301703","9780735219090","9780593597675"]
+    
+}
+

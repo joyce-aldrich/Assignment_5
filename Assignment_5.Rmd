@@ -1,0 +1,42 @@
+---
+title: "Assignment_5"
+author: "Joyce Aldrich"
+date: "2022-10-15"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+#install packages
+# XML / RJSON
+
+# HTML file 
+# Loading html file into R
+```{r}
+library(XML)
+books_html_table <- readHTMLTable("/Users/joycealdrich/Documents/SPS Data Science/Data 607/Assignment_5/Books.html", which = 1)
+head(books_html_table)
+```
+
+#XML file
+#loadin XML file into R and turn into df
+
+```{r}
+library(XML)
+xml_parsed<-xmlParse(file = "/Users/joycealdrich/Documents/SPS Data Science/Data 607/Assignment_5/Books.xml")
+books_xml_table<-xmlToDataFrame(xml_parsed, stringsAsFactors = FALSE)                       
+head(books_xml_table)
+```
+
+#json
+#loading json file into R
+```{r}
+library(rjson)
+json_parsed <-fromJSON(file = "/Users/joycealdrich/Documents/SPS Data Science/Data 607/Assignment_5/Books.json")
+print(json_parsed)
+books_json_table<- as.data.frame(json_parsed)
+head(books_json_table)
+
+```
+
+

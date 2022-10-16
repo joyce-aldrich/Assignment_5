@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table-of-books>
+	<book>
+		<Title>The Silent Patient</Title>
+		<Author_1>Alex Michaelides</Author_1>
+		<Author_2></Author_2>
+		<Publisher>Celadon Books</Publisher>
+		<Pages>336</Pages>
+		<ISBN>9781250301703</ISBN>
+	</book>
+
+	<book>
+		<Title>Where the Crawdads Sing</Title>
+		<Author_1>Delia Ownes</Author_1>
+		<Author_2></Author_2>
+		<Publisher>Penguin Publishing Group</Publisher>
+		<Pages>384</Pages>
+		<ISBN>9780735219090</ISBN>
+	</book>
+
+	<book>
+		<Title>Mad Honey</Title>
+		<Author_1>Jodi Picoult</Author_1>
+		<Author_2>Jennifer Finney Boylan</Author_2>
+		<Publisher>Random House Publishing Group</Publisher>
+		<Pages>464</Pages>
+		<ISBN>9780593597675</ISBN>
+	</book>
+</table-of-books>
